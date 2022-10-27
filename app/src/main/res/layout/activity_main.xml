@@ -76,6 +76,7 @@
         app:layout_constraintStart_toStartOf="@id/leftguide"
         android:background="@color/blanaz"
         app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_action_name"
         >
         <EditText
             android:layout_width="match_parent"
