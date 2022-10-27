@@ -14,8 +14,8 @@
         android:text="UserName"
         android:id="@+id/username"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/cancel"
-        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/rigthguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="8dp"
         android:padding="8dp"
@@ -29,8 +29,8 @@
         android:layout_height="wrap_content"
         android:text="Password"
         app:layout_constraintTop_toBottomOf="@id/username"
-        app:layout_constraintEnd_toEndOf="@id/cancel"
-        app:layout_constraintStart_toStartOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/rigthguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
         android:layout_margin="8dp"
         android:padding="8dp"
         android:background="@color/blanaz"
@@ -42,16 +42,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/password"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        android:layout_margin="8dp"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
         android:backgroundTint="@color/lilaD"
         >
 
     </Button>
  <Button
-     android:layout_width="wrap_content"
+     android:layout_width="0dp"
      android:layout_height="wrap_content"
      android:text="cancel"
      android:id="@+id/cancel"
@@ -59,6 +56,7 @@
      app:layout_constraintTop_toTopOf="@id/login"
      android:layout_marginLeft="8dp"
      android:backgroundTint="@color/lilaD"
+     app:layout_constraintEnd_toEndOf="@id/rigthguide"
      >
  </Button>
 
@@ -74,5 +72,23 @@
         >
 
     </ImageView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20"
+        android:id="@+id/leftguide"
+        >
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.80"
+        android:id="@+id/rigthguide"
+        >
+    </androidx.constraintlayout.widget.Guideline>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
