@@ -33,12 +33,18 @@
         android:background="@color/blanaz"
 
         />
+    
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:id="@+id/tilusername"
         >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
 
+        </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -53,6 +59,19 @@
         android:padding="8dp"
         android:background="@color/blanaz"
      />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tilpassword"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
