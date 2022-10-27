@@ -19,7 +19,7 @@
         >
     </ImageView>
 
-    <TextView
+   <!-- <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="UserName"
@@ -32,22 +32,29 @@
         android:padding="8dp"
         android:background="@color/blanaz"
 
-        />
-    
+        />-->
+
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/tilusername"
+        android:id="@+id/username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rigthguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:background="@color/blanaz"
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Username"
             >
 
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+ <!--   <TextView
         android:id="@+id/password"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -58,16 +65,22 @@
         android:layout_margin="8dp"
         android:padding="8dp"
         android:background="@color/blanaz"
-     />
+     /> -->
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:id="@+id/tilpassword"
+        android:id="@+id/password"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/rigthguide"
+        app:layout_constraintStart_toStartOf="@id/leftguide"
+        android:background="@color/blanaz"
         >
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
             >
 
         </EditText>
