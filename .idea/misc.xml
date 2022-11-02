@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/drawable/ic_usu_background.xml" value="0.2985" />
+        <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/layout/activity_main2.xml" value="0.302536231884058" />
+        <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/layout/activity_sign.xml" value="0.302536231884058" />
+        <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_usu.xml" value="0.196" />
+        <entry key="..\:/Users/am3Dam2/AndroidStudioProjects/Fundamentals/app/src/main/res/mipmap-anydpi-v26/ic_usu_round.xml" value="0.14" />
       </map>
     </option>
   </component>

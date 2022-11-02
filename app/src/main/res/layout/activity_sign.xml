@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@color/azult"
     >
     <ImageView
@@ -18,34 +17,14 @@
         android:id="@+id/log"
         >
     </ImageView>
-
-   <!-- <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="UserName"
-        android:id="@+id/username"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/rigthguide"
-        app:layout_constraintStart_toStartOf="@id/leftguide"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:background="@color/blanaz"
-
-        />-->
-
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:id="@+id/username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/rigthguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="32dp"
-        android:background="@color/blanaz"
         app:startIconDrawable="@drawable/ic_action_usu"
-        >
+        style="@style/camprinci">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,30 +34,29 @@
         </EditText>
     </com.google.android.material.textfield.TextInputLayout>
 
- <!--   <TextView
-        android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Password"
-        app:layout_constraintTop_toBottomOf="@id/username"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
         app:layout_constraintEnd_toEndOf="@id/rigthguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:background="@color/blanaz"
-     /> -->
+         app:layout_constraintTop_toBottomOf="@id/username"
+        style="@style/camprinci">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            >
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:id="@+id/password"
-        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/email"
         app:layout_constraintEnd_toEndOf="@id/rigthguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
-        android:background="@color/blanaz"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/ic_action_name"
-        >
+        style="@style/campedit">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -93,26 +71,19 @@
     <Button
         android:id="@+id/login"
         android:text="ok"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/password"
         app:layout_constraintStart_toStartOf="@id/leftguide"
-        android:backgroundTint="@color/lilaD"
-        >
+        style="@style/mainbutton">
 
     </Button>
- <Button
-     android:layout_width="0dp"
-     android:layout_height="wrap_content"
-     android:text="cancel"
-     android:id="@+id/cancel"
-     app:layout_constraintStart_toEndOf="@id/login"
-     app:layout_constraintTop_toTopOf="@id/login"
-     android:layout_marginLeft="8dp"
-     android:backgroundTint="@color/lilaD"
-     app:layout_constraintEnd_toEndOf="@id/rigthguide"
-     >
- </Button>
+    <Button
+        android:text="cancel"
+        android:id="@+id/cancel"
+        app:layout_constraintStart_toEndOf="@id/login"
+        app:layout_constraintTop_toTopOf="@id/login"
+        app:layout_constraintEnd_toEndOf="@id/rigthguide"
+        style="@style/canbutton">
+    </Button>
 
 
 
@@ -133,5 +104,7 @@
         android:id="@+id/rigthguide"
         >
     </androidx.constraintlayout.widget.Guideline>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
